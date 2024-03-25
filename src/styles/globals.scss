@@ -1,0 +1,32 @@
+@import "../..//node_modules/bulma/sass/utilities/initial-variables.scss";
+@import "../..//node_modules/bulma/sass/utilities/functions.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$family-serif: "Montserrat", serif;
+$family-primary: $family-serif;
+
+$primary: #f8f5f5;
+$blue: #3F6DF5;
+$blue-invert: invert($blue);
+
+
+@import "../..//node_modules/bulma/sass/utilities/derived-variables.scss";
+$addColors: (
+  "blue":($blue, $blue-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+@import "../../node_modules/bulma/sass";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  // blue-color: #3F6DF5;
+}
+
